@@ -1,0 +1,74 @@
+/* fonts */
+
+
+/* jost */
+
+/* jost regular */
+
+@font-face {
+    font-family: "Jost";
+    src: local("Jost regular"),
+        url("../fonts/jost/regular/jost-regular.eot"),
+        url("../fonts/jost/regular/jost-regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/jost/regular/jost-regular.woff2") format("woff2"),
+        url("../fonts/jost/regular/jost-regular.woff") format("woff"),
+        url("../fonts/jost/regular/jost-regular.ttf") format("truetype"),
+        url("../fonts/jost/regular/jost-regular.svg") fornat("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; 
+}
+
+/* jost medium */
+
+@font-face {
+    font-family: "Jost";
+    src: local("Jost medium"),
+        url("../fonts/jost/medium/Jost-Medium.eot"),
+        url("../fonts/jost/medium/Jost-Medium.eot?#") format("embedded-opentype"),
+        url("../fonts/jost/medium/Jost-Medium.woff2") format("woff2"),
+        url("../fonts/jost/medium/Jost-Medium.woff") format("woff"),
+        url("../fonts/jost/medium/Jost-Medium.ttf") format("truetype"),
+        url("../fonts/jost/medium/Jost-Medium.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; 
+}
+
+
+/* poppins */
+
+/* poppins medium */
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins medium"),
+        url("../fonts/poppins/medium/poppins_medium.eot"),
+        url("../fonts/poppins/medium/poppins_medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/poppins/medium/poppins_medium.woff2") format("woff2"),
+        url("../fonts/poppins/medium/poppins_medium.woff") format("woff"),
+        url("../fonts/poppins/medium/poppins_medium.ttf") format("truetype"),
+        url("../fonts/poppins/medium/poppins_medium.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* zen dots */
+
+/* zen dots regular */
+
+@font-face {
+    font-family: "Zen Dots";
+    src: local("Zen Dots regular"),
+        url("../fonts/zen-dots/regular/zen_dots_regular.eot"),
+        url("../fonts/zen-dots/regular/zen_dots_regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/zen-dots/regular/zen_dots_regular.woff2") format("woff2"),
+        url("../fonts/zen-dots/regular/zen_dots_regular.woff") format("woff"),
+        url("../fonts/zen-dots/regular/zen_dots_regular.ttf") format("truetype"),
+        url("../fonts/zen-dots/regular/zen_dots_regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
