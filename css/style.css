@@ -87,6 +87,8 @@
      #0b0e17 97%, #09101d 100%);
 
     --default-size-text: 18px;
+
+    --soft-border-color: #e9e9ef;
 }
 
 .document {
@@ -235,8 +237,6 @@
 .btn--standart {
     padding: 1em 2.5em;
 
-    background: var(--default-gradient-bg);
-    border: 1px solid var(--default-color-bg);
     border-radius: 0.555em;
 
     font-family: "Jost", sans-serif;
@@ -254,6 +254,10 @@
     text-shadow: 0 0 1em var(--default-color-text); 
 }
 
+.btn--accent {
+    background: var(--default-gradient-bg);
+    border: 1px solid var(--default-color-bg);
+}
 /* .menu */
 
 .header__menu {
@@ -299,8 +303,10 @@
     align-items: center;
 }
 
-.page__intro {
+.main__intro {
     position: relative;
+
+    margin: 0 0 149px;
 }
 
 .intro__column--description {
@@ -349,8 +355,25 @@
     margin: 0 0 68px;
 }
 
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
+}
 
 /* .creator */
+
+.main__creator {
+    margin: 0 0 97px;
+    
+    text-align: center;
+}
+
+.creator__header {
+    text-align: center;
+}
 
 .card__avatar {
     display: block;
@@ -361,4 +384,83 @@
     border-radius: 50%;
 
     object-fit: cover;
+}
+
+.subtitle {
+    font-family: "Zen Dots";
+    font-size: 2.666rem;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.creator__subtitle {
+    margin: 0 0 16px;
+}
+
+.text-contain {
+    line-height: 1.833;
+    color: var(--soft-color-text);
+}
+
+.creator__text-contain {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto 74px;
+}
+
+.creator__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 31px;
+
+    margin: 0 0 57px;
+}
+
+.creator__item {
+    flex-basis: 275px;
+
+    margin: 0 0 2.22em;
+    padding: 0.83em 1.22em;
+
+    border: 1px solid var(--soft-border-color);
+    border-radius: 0.55em;
+}
+
+.creator__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    
+    width: 100%;
+}
+
+.subtitle--min {
+    letter-spacing: 1px;
+}
+
+.card__subtitle {
+    margin: 0 0 0.43em;
+
+    text-align: left;
+    white-space: nowrap;
+}
+
+.card__cost-contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+}
+
+.card__cost-number {
+    font-size: 0.88rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
