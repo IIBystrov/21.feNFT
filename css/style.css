@@ -91,6 +91,9 @@
     --default-size-text: 18px;
 
     --soft-border-color: #e9e9ef;
+    --accent-border-color: #ee29c9;
+    --default-border-color: #002445;
+    --primary-color-border: #ffdd10;
 }
 
 .document {
@@ -241,6 +244,7 @@
     padding: 1em 2.5em;
 
     border-radius: 0.555em;
+    border: 1px solid transparent;
 
     font-family: "Jost", sans-serif;
     font-weight: 500;
@@ -261,6 +265,7 @@
     background: var(--default-gradient-bg);
     border: 1px solid var(--default-color-bg);
 }
+
 /* .menu */
 
 .header__menu {
@@ -268,6 +273,7 @@
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    
     width: 55px;
 
     border-radius: 50%;
@@ -648,4 +654,104 @@
 
 .control__icon--reverse {
     transform: scaleX(-1);
+}
+
+
+/* .video-work */
+
+.video-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 96px;
+}
+
+.main__video-work {
+    width: 100%;
+
+    margin: 0 0 56px;
+}
+
+.video-work__header {
+    margin: 0 0 107px;
+
+    text-align: left;
+}
+
+.video-work__subtitle {
+    margin: 0 0 16px;
+}
+
+.video-work__text-contain {
+    width: 100%;
+    max-width: 474px
+}
+
+.video__item {
+    display: block;
+
+    overflow: hidden;
+
+    width: 160px;
+    height: 160px;
+
+    border: 10px solid var(--accent-border-color);
+    border-radius: 50%;
+}
+
+.video__item--primary {
+    border-color: var(--primary-color-border);
+}
+
+.video__img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.video__preview {
+    position: relative;
+}
+
+.preview__video {
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+    width: 407px;
+    height: 407px;
+
+    border-radius: 50%;
+    border: 10px solid var(--default-border-color);
+}
+
+.preview__img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.preview__btn {
+    position: absolute;
+    left: 7%;
+    top: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 34px 30px 34px 38px;
+
+    border-radius: 50%;
 }
