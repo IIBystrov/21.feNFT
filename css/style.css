@@ -907,6 +907,14 @@
     gap: 25px;
 }
 
+.social__link {
+    position: relative;
+}
+
+.social__tooltip {
+    position: absolute;
+}
+
 .footer__nav {
     display: flex;
     flex-direction: row;
