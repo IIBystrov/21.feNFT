@@ -128,6 +128,8 @@
     margin: 0 auto;
 }
 
+/* .inner */
+
 .inner {
     position: relative;
 }
@@ -909,10 +911,60 @@
 
 .social__link {
     position: relative;
+
+    display: inline-block;
+
+    padding: 5px;
+}
+
+.social__link:hover .social__tooltip,
+.social__link:focus .social__tooltip {
+    transform: translate(-50%, -130%);
+
+    opacity: 1;
+    visibility: visible;
 }
 
 .social__tooltip {
     position: absolute;
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+
+    box-shadow: 0 0 10px var(--primary-color-bg);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip {
+    padding: 0.5em 1em;
+
+    background: var(--primary-color-bg);
+    border-radius: 10px;
+
+    color: var(--default-color-text);
+}
+
+.tooltip::before {
+    content: "";
+
+    position: absolute;
+
+    bottom: -7%;
+    left: 50%;
+
+    transform: translateX(-50%) rotate(45deg);
+    
+    display: block;
+
+    width: 0.7em;
+    height: 0.7em;
+
+    background: inherit;
 }
 
 .footer__nav {
