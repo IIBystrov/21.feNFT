@@ -920,9 +920,9 @@
 .subtitle--extra-min {
     font-family: "Zen Dots", sans-serif;
     font-size: 1.33em;
-    line-height: 1.75px;
+    line-height: 1.75em;
     text-transform: capitalize;
-    color: var(--primaty-color-text);
+    color: var(--default-color-text);
 }
 
 .footer__subtitle {
@@ -930,5 +930,12 @@
 }
 
 .footer__nav-list {
+    font-size: 0.88em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
     color: var(--primaty-color-text);
+}
+
+.footer__nav-item {
+    margin: 0 0 26px;
 }
