@@ -373,6 +373,24 @@
     justify-content: flex-start;
     align-items: center;
     gap: 80px;
+
+    text-align: center;
+}
+
+.card__number {
+    margin: 0 0 6px;
+
+    font-weight: 500;
+    font-size: 1.33em;
+    line-height: 1.45em;
+}
+
+.card__text-contain {
+    font-size: 0.88em;
+    line-height: 1.93em;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--soft-color-text);
 }
 
 /* .creator */
