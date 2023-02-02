@@ -815,3 +815,40 @@
 
     border-radius: 50%;
 }
+
+
+/* .description */
+
+.description {
+    width: 100%;
+
+    text-align: center;
+}
+
+.main__description {
+    width: 100%;
+
+    margin: 0 0 133px;
+}
+
+.description__header {
+    width: 100%;
+    max-width: 950px;
+
+    margin: 0 auto 77px;
+}
+
+.description__subtutle {
+    margin: 0 0 16px;
+}
+
+.description__text-contain {
+    width: 100%;
+    max-width: 802px;
+
+    margin: 0 auto;
+}
+
+.description__text-contain *:not(:last-child) {
+    margin: 0 0 10px;
+}
