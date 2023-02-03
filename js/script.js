@@ -4,10 +4,13 @@
 
 let menu = document.querySelector(".header__menu");
 
-let menuLine = document.querySelectorAll(".menu__line");
-let menuLineTop = menuLine[0];
-let menuLineMiddle = menuLine[1];
-let menuLineBottom = menuLine[2];
+let menuDot = document.querySelectorAll(".menu__dot");
+let menuDotTop = menuDot[0];
+let menuDotMiddle = menuDot[1];
+let menuDotBottom = menuDot[2];
+
+let headerNav = document.querySelector(".header__nav");
+let headerBtn = document.querySelector(".header__btn");
 
 // eventListener
 
@@ -16,7 +19,10 @@ menu.addEventListener("click", toggleMenu);
 // functions
 
 function toggleMenu() {
-    menuLineTop.classList.toggle("menu__line--top");
-    menuLineMiddle.classList.toggle("menu__line--middle");
-    menuLineBottom.classList.toggle("menu__line--bottom");
+    menuDotTop.classList.toggle("menu__dot--top");
+    menuDotMiddle.classList.toggle("menu__dot--middle");
+    menuDotBottom.classList.toggle("menu__dot--bottom");
+
+    headerNav.classList.toggle("header__nav--active");
+    headerBtn.classList.toggle("header__btn--active");
 }
