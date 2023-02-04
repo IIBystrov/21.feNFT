@@ -95,6 +95,8 @@
     --accent-border-color: #ee29c9;
     --default-border-color: #002445;
     --primary-color-border: #ffdd10;
+
+    --accent-shadow: #c3181f;
 }
 
 .document {
@@ -273,6 +275,40 @@
     background: var(--default-gradient-bg);
     border: 1px solid var(--default-color-bg);
 }
+
+.btn--gradient-border {
+    position: relative;
+
+    padding: 1em 1.38em;
+    
+    background: var(--default-color-bg);
+    border-radius: 0.555em;
+    border: 1px solid transparent;
+}
+
+.btn--gradient-border::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    margin: -2px;
+
+    background: var(--default-gradient-bg);
+    border-radius: 0.555em;
+}
+
+.btn--gradient-border:hover,
+.btn--gradient-border:focus {
+    border: 1px solid transparent;
+    box-shadow: 0 0 2em var(--accent-shadow);
+    text-shadow: 0 0 1em var(--default-color-text);
+}
+
 
 .header__btn {
     transition: all 0.3s ease-in;
