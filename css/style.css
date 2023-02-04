@@ -309,7 +309,6 @@
     text-shadow: 0 0 1em var(--default-color-text);
 }
 
-
 .header__btn {
     transition: all 0.3s ease-in;
 }
@@ -1060,6 +1059,41 @@
 .footer__nav-item {
     margin: 0 0 26px;
 }
+
+.footer__nav-link {
+    position: relative;
+
+    transition: color 0.3s ease-in;
+}
+
+.footer__nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -15%;
+
+    display: block;
+
+    width: 0%;
+    height: 2px;
+
+    background: var(--default-color-text);
+    border-radius: 2px;
+
+    transition: width 0.3s ease-in;
+}
+
+.footer__nav-link:hover,
+.footer__nav-link:focus {
+    color: var(--default-color-text);
+}
+
+.footer__nav-link:hover.footer__nav-link::after, 
+.footer__nav-link:focus.footer__nav-link::after {
+    width: 100%;
+}
+
 
 /* @media */
 
