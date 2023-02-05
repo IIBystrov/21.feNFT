@@ -703,7 +703,18 @@
 }
 
 .control--next {
+    border: 1px solid var(--default-color-bg);
+    
     background: var(--default-gradient-bg);
+
+    transition: border-color 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+
+.control--next:hover,
+.control--next:focus {
+    border-color: var(--light-color-bg);
+
+    box-shadow: 0 0 20px var(--accent-shadow);
 }
 
 .control--prev {
