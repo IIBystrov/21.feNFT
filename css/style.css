@@ -718,7 +718,18 @@
 }
 
 .control--prev {
+    border: 1px solid var(--default-color-bg);
+
     background: var(--inactive-color-bg);
+
+    transition: border-color 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+
+.control--prev:hover,
+.control--prev:focus {
+    border-color: var(--light-color-bg);
+
+    box-shadow: 0 0 20px var(--inactive-color-bg);
 }
 
 .slider__control {
