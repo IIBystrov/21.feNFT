@@ -1121,12 +1121,18 @@
 /* .modal */
 
 .page__modal {
+    display: none;
+}
+
+.page__modal--active {
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
     z-index: 40;
+
+    display: block;
 
     background: var(--default-color-bg);
 }
@@ -1184,12 +1190,37 @@
     right: 1%;
     z-index: 41;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width: 50px;
     height: 50px;
 
     border-radius: 50%;
     border: 1px solid var(--light-color-bg);
     background: transparent;
+}
+
+.btn__line {
+    display: block;
+
+    width: 90%;
+    height: 2px;
+
+    background: var(--light-color-bg);
+    border-radius: 5px;
+}
+
+.btn__line--top {
+    transform-origin: 45% 100%;
+    transform: rotate(45deg);
+}
+
+.btn__line--middle {
+    transform-origin: 49% 0%;
+    transform: rotate(-45deg);
 }
 
 /* @media */

@@ -15,9 +15,17 @@ let headerBtn = document.querySelector(".header__btn");
 
 let header = document.querySelector(".page__header");
 
+let modal = document.querySelector(".page__modal");
+let signUpBtn = document.querySelector(".btn--sign-up");
+let closeBtn = document.querySelector(".modal__close-btn");
+
+
 // eventListener
 
 menu.addEventListener("click", toggleMenu);
+
+signUpBtn.addEventListener("click", modalOpen);
+closeBtn.addEventListener("click", btnClose);
 
 // functions
 
@@ -34,4 +42,12 @@ function toggleMenu() {
     navItem.forEach(element => {
         element.classList.toggle("nav__item--active")
     });
+}
+
+function modalOpen() {
+    modal.classList.add("page__modal--active");
+}
+
+function btnClose() {
+    modal.classList.remove("page__modal--active");
 }
