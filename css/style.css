@@ -737,8 +737,9 @@
     height: 81px;
 }
 
-.control__icon--reverse {
-    transform: scaleX(-1);
+.control__icon {
+    width: 16px;
+    height: 27px;
 }
 
 
